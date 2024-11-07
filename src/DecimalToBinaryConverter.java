@@ -57,7 +57,7 @@ public class DecimalToBinaryConverter {
         //Start to mirror the number
         String[] binary = reverseBinary.toString().split("");
 
-        System.out.println("Binary with 3 digits: " +  binary[2] + binary[1] + binary[0]);
+        //System.out.println("Binary with 3 digits: " +  binary[2] + binary[1] + binary[0]);
 
         //reverse all binary number with for loop
         int n = binary.length;
@@ -68,7 +68,9 @@ public class DecimalToBinaryConverter {
         }
 
         if (negativeChecker.equals("-")){
-            System.out.print("-");
+            System.out.print("0");
+        } else {
+            System.out.println("1");
         }
 
         for ( String resultBinary : binary) {
